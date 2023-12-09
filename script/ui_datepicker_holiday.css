@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+.ui-state-active
+, .ui-widget-content .ui-state-active
+, .ui-widget-header .ui-state-active
+, a.ui-button:active
+, .ui-button:active
+, .ui-button.ui-state-active:hover {
+    border: 1px solid #003eff !important;
+    background: #007fff !important;
+    font-weight: normal !important;
+    color: #ffffff !important;
+}
+.ui-datepicker-holiday a.ui-state-default{
+	border: 1px solid #ecc0c0;
+	background-color: #ffecec !important;
+	color: #ff0000 !important;
+}
+.ui-datepicker-holiday a.ui-state-active{
+	border: 1px solid #003eff !important;
+	background: #007fff !important;
+	font-weight: normal !important;
+	color: #ffffff !important;	
+}
+/* 日曜日のカラー設定 */
+.ui-datepicker-week-end:first-child a{
+  background-color: #ffecec;   /* 背景色を設定 */
+  color: #ff0000;       /* 文字色を設定 */
+}
+/* 土曜日のカラー設定 */
+.ui-datepicker-week-end:last-child a{
+  background-color: #eaeaff;   /* 背景色を設定 */
+  color: #0000ff;       /* 文字色を設定 */
+}
