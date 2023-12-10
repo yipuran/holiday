@@ -3,7 +3,7 @@
 祝日計算をプログラムで行う。<br/>
 （ ja.osdn.net で、jholiday として公開していたのを GitHub に移動した。）
 
-Java版とJavaScript が存在する。<br/>
+Java版とJavaScripth版、Python版 が存在する。<br/>
 １ソースのプログラムのみで構成するため、 祝日の新制度、変更が発生した場合の修正メンテナンスは１ソース内だけで行う。<br/>
 JavaのJARライブラリ配布はしない。<br/>
 よって、src/main/java に格納された Javaプログラムをダウンロードして利用する。
