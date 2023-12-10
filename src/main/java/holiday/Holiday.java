@@ -78,7 +78,7 @@ public class Holiday{
 	public enum HolidayType{
 		/** 元旦        ：１月１日            */ NEWYEAR_DAY             (NewYearDayBundle.class),
 		/** 成人の日    ：１月の第２月曜日    */ COMING_OF_AGE_DAY       (ComingOfAgeDayBundle.class),
-		/** 建国記念日  ：２月１１日          */ NATIONAL_FOUNDATION_DAY (NatinalFoundationBundle.class),
+		/** 建国記念日  ：２月１１日          */ NATIONAL_FOUNDATION_DAY (NationalFoundationBundle.class),
 		/** 天皇誕生日  ：２月２３日          */ TENNO_BIRTHDAY          (TennoBirthDayBundle.class),
 		/** 春分の日    ：３月 官報公示で決定 */ SPRING_EQUINOX_DAY      (SpringEquinoxBundle.class),
 		/** 昭和の日    ：４月２９日          */ SHOUWA_DAY              (ShowaDayBundle.class),
@@ -109,7 +109,7 @@ public class Holiday{
 	// 月→HolidayBundle class 参照 enum
 	private enum MonthBundle{
 		JANUARY        (NewYearDayBundle.class, ComingOfAgeDayBundle.class)
-		, FEBRUARY     (NatinalFoundationBundle.class, TennoBirthDayBundle.class)
+		, FEBRUARY     (NationalFoundationBundle.class, TennoBirthDayBundle.class)
 		, MARCH        (SpringEquinoxBundle.class)
 		, APRIL        (ShowaDayBundle.class)
 		, MAY          (KenpoukikenDayBundle.class, MidoriDayBundle.class, KodomoDayBundle.class)
@@ -582,8 +582,8 @@ public class Holiday{
 		}
 	}
 	// 建国記念日
-	class NatinalFoundationBundle extends HolidayBundle{
-		public NatinalFoundationBundle(int year){
+	class NationalFoundationBundle extends HolidayBundle{
+		public NationalFoundationBundle(int year){
 			super(year);
 		}
 		@Override
